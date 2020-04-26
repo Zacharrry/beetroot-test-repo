@@ -88,7 +88,7 @@ while True:
                     input(next_iteration)
                     continue
             if b.count('.') > 1 or b.count(',') > 1:
-                c
+                print(type_error, 'в числі', b)
                 input(next_iteration)
                 continue
                 
