@@ -18,11 +18,11 @@ def returnSum(dict):
       
      sum = 0
      for i in stock: 
-           sum = sum + stock[i] * prices[i]
+           sum += stock[i] * prices[i]
        
      return sum
   
 # Driver Function 
-dict = prices
+dict = stock
 
 print("Sum :", returnSum(dict)) 
