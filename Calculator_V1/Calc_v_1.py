@@ -53,30 +53,30 @@ while True:
                 b = input(num_b_request).strip()
                 
                 
-            if user_choice == 5:
+        if user_choice == 5:
                 a = input("\nВведіть основу степеня: ").strip
                 b = input("Введите показник степеня: ").strip
                 
-            if a.count('-') > 1:
+                if a.count('-') > 1:
                 print(type_error, "в числі", a)
                 input(next_iteration)
                 continue
             
-            if b.count('-') == 1:
+                if b.count('-') == 1:
                 if b[0] != '-':
                     input(next_iteration)
                     continue
                     
-            if a.count('.') > 1 or a.count(',') > 1:
+                if a.count('.') > 1 or a.count(',') > 1:
                 print(type_error, "в числі", a)
                 input(next_iteration)
                 continue
             
-            if a.lstrip('-').isdigit():
+                if a.lstrip('-').isdigit():
                 a = int(a)    
-            elif a.count('.') == 1:
+                 elif a.count('.') == 1:
                 a = float(a)
-            elif a.count(',') == 1:
+                elif a.count(',') == 1:
                 a = float(a.replace(',','.',1))
             else:
                 print(type_error, "в числі", a)
