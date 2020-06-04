@@ -3,6 +3,7 @@ stock = {
     "apple": 0,
     "orange": 32,
     "pear": 15,
+    "pumpkin": 0
    
 }
 prices = {
@@ -17,15 +18,15 @@ prices = {
 #}
 def returnSum(dict): 
       
+     #y = prices.get("pumpkin", "0")
+     #print(y)
      sum = 0
      for i in stock: 
            sum += stock[i] * prices[i]
      return sum
-     for i in prices:
-         print(prices.get("pumpkin", 0))  
      
   
 # Driver Function 
-dict = stock
+dict = prices
 
 print("Sum :", returnSum(dict)) 
